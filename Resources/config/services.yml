@@ -4,6 +4,7 @@ services:
 
     dmishh.settings.settings_manager:
         class: Dmishh\SettingsBundle\Manager\SettingsManager
+        public: true
         arguments:
             - "@doctrine.orm.entity_manager"
             - "@dmishh.settings.serializer"
